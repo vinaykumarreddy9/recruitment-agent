@@ -1,15 +1,6 @@
 # 🤖 Supervised Recruiting Agent
 
-
-![CI](https://github.com/JoshuaC215/agent-service-toolkit/actions/workflows/test.yml/badge.svg)
-
-![codecov](https://codecov.io/github/JoshuaC215/agent-service-toolkit/graph/badge.svg?token=5MTJSYWD05)
-
-![Python Version](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FJoshuaC215%2Fagent-service-toolkit%2Frefs%2Fheads%2Fmain%2Fpyproject.toml)
-
-![License](https://img.shields.io/github/license/JoshuaC215/agent-service-toolkit)
-
-![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)
+![CI](https://github.com/JoshuaC215/agent-service-toolkit/actions/workflows/test.yml/badge.svg)![codecov](https://codecov.io/github/JoshuaC215/agent-service-toolkit/graph/badge.svg?token=5MTJSYWD05)![Python Version](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FJoshuaC215%2Fagent-service-toolkit%2Frefs%2Fheads%2Fmain%2Fpyproject.toml)![License](https://img.shields.io/github/license/JoshuaC215/agent-service-toolkit)![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)
 
 A specialized AI-powered recruiting assistant built on the Agent Service Toolkit.  
 The Supervised Recruiting Agent streamlines the hiring process by gathering job requirements, drafting job descriptions, and generating technical screening questions in a guided, conversational workflow.  
@@ -33,7 +24,7 @@ This ensures all outputs are complete, structured, and manager-approved before f
 
 If GitHub doesn't render the diagram in preview, ensure GitHub's mermaid support is enabled for the repository or use an external mermaid live editor to visualize.
 
-```mermaid
+```
 graph TD
     User[Hiring Manager] --> Streamlit[Streamlit App (UI)]
     Streamlit --> Client[Agent Client]
@@ -48,7 +39,7 @@ graph TD
 ```
 
 
-```mermaid
+```
     subgraph LangGraph_Agent_Flow["LangGraph Agent Flow"]
         A[Start] --> B[Supervisor Agent]
         B --> C{Route Logic}
