@@ -4,7 +4,8 @@
 [![codecov](https://codecov.io/github/JoshuaC215/agent-service-toolkit/graph/badge.svg?token=5MTJSYWD05)](https://codecov.io/github/JoshuaC215/agent-service-toolkit)  
 ![Python Version](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FJoshuaC215%2Fagent-service-toolkit%2Frefs%2Fheads%2Fmain%2Fpyproject.toml)  
 ![License](https://img.shields.io/github/license/JoshuaC215/agent-service-toolkit)  
-![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)  
+![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_red.svg)
+ 
 
 A specialized **AI-powered recruiting assistant** built on the [Agent Service Toolkit](https://github.com/JoshuaC215/agent-service-toolkit).  
 The Supervised Recruiting Agent streamlines the hiring process by **gathering job requirements, drafting job descriptions, and generating technical screening questions** in a guided, conversational workflow.  
