@@ -194,6 +194,8 @@ async def invoke(user_input: UserInput, agent_id: str = DEFAULT_AGENT) -> ChatMe
         raise HTTPException(status_code=500, detail="Unexpected error")
 
 
+# This is the ORIGINAL message_generator function. Paste this into service.py
+
 async def message_generator(
     user_input: StreamInput, agent_id: str = DEFAULT_AGENT
 ) -> AsyncGenerator[str, None]:

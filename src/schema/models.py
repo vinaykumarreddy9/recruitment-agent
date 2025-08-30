@@ -65,11 +65,13 @@ class VertexAIModelName(StrEnum):
     GEMINI_25_PRO = "gemini-2.5-pro"
 
 
+# src/schema/models.py
+
 class GroqModelName(StrEnum):
     """https://console.groq.com/docs/models"""
 
-    LLAMA_31_8B = "llama-3.1-8b"
-    LLAMA_33_70B = "llama-3.3-70b"
+    LLAMA_31_8B = "llama3-8b-8192"
+    LLAMA_33_70B = "llama3-70b-8192"
 
     LLAMA_GUARD_4_12B = "meta-llama/llama-guard-4-12b"
 
