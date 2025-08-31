@@ -22,36 +22,7 @@ This ensures all outputs are complete, structured, and manager-approved before f
 
 ## 🏗️ Architecture
 
-If GitHub doesn't render the diagram in preview, ensure GitHub's mermaid support is enabled for the repository or use an external mermaid live editor to visualize.
-
-```
-graph TD
-    User[Hiring Manager] --> Streamlit[Streamlit App (UI)]
-    Streamlit --> Client[Agent Client]
-    Client --> FastAPI[FastAPI Service]
-    FastAPI --> LangGraph[LangGraph Agent (Supervised Recruiting Agent)]
-    LangGraph --> LLM[LLM (e.g., OpenAI, Groq)]
-    LLM --> LangGraph
-    LangGraph --> FastAPI
-    FastAPI --> Client
-    Client --> Streamlit
-    Streamlit --> User
-```
-
-
-```
-    subgraph LangGraph_Agent_Flow["LangGraph Agent Flow"]
-        A[Start] --> B[Supervisor Agent]
-        B --> C{Route Logic}
-        C -- "invoke_intent" --> D[Intent Agent]
-        D -- "incomplete/complete" --> B
-        C -- "invoke_jd" --> E[JD Agent]
-        E -- "incomplete/complete" --> B
-        C -- "invoke_questions" --> F[Question Agent]
-        F -- "incomplete/complete" --> B
-        C -- "END" --> G[End]
-    end
-```
+![Architecture](docs/supervisor_agent.png)
 
 ---
 
