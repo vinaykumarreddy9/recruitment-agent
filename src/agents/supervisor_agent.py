@@ -407,7 +407,7 @@ def invoke_questions(state: SupervisorState) -> dict:
         previous_questions=previous_questions,
     ))
 
-    display_questions = "\n".join(f"{ref_no+1}. {question}" for ref_no, question in enumerate(analysis.questions))
+    display_questions = "\n".join(f"{ref_no+1} {question}" for ref_no, question in enumerate(analysis.questions))
 
     if analysis.node_decision == "complete":
         response_content = (
